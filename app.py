@@ -10,7 +10,7 @@ def root(event_date: str):
     try:
         target_date = date.fromisoformat(event_date)
     except ValueError:
-        raise HTTPException(status_code=400, detail="Invalid date format")
+        raise HTTPException(status_code=400, detail="Invalid date format. Please use YYYY-MM-DD.")
     
     today = date.today()
     difference = target_date - today
