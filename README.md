@@ -43,3 +43,8 @@ Status code: `400`
 **UML Sequence Diagram**
 
 <img width="585" height="395" alt="image" src="https://github.com/user-attachments/assets/249aef57-f88f-432f-8825-7f385ab33e06" />
+
+**How do test this service in local?**
+- Install dependencies: `pip install fastapi uvicorn pytest`
+- Run test cases: `pytest`
+- Run service: `uvicorn app.main:app --reload --port 8000`
